@@ -1,6 +1,6 @@
 # 09 Node.js Homework: Professional README Generator
 
-## Your Task
+## About the Task
 
 When creating an open source project on GitHub, it’s important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions&mdash;this last part increases the likelihood that other developers will contribute to the success of the project. 
 
@@ -12,10 +12,10 @@ Your task is to create a command-line application that dynamically generates a p
 
 - [Installation Guide](#installation)
 - [User Story](#story)
-- [My Solution](#license)
+- [My Solution](#my-solution)
 - [Getting Started](#start)
 - [How to Contribute](#how-to-contribute)
-- [Tests](#tests)
+- [Sample README](#sample)
 - [Questions](#questions)
 
 ## Installation Guide
@@ -26,20 +26,19 @@ The application will be invoked by using the following command:
 node index.js
 ```
 
-Because this application won’t be deployed, you’ll also need to provide a link to a walkthrough video that demonstrates its functionality. Revisit the Screencastify Tutorial in the prework as a refresher on how to record video from your computer. You’ll need to submit a link to the video _and_ add it to the README of your project.
-
+Because this application won’t be deployed, you’ll also need to provide a link to a walkthrough video that demonstrates its functionality. 
 
 ## User Story
 
-```md
+```
 AS A developer
 I WANT a README generator
 SO THAT I can quickly create a professional README for a new project
 ```
 
-## Acceptance Criteria
+## My Solution
 
-```md
+```
 GIVEN a command-line application that accepts user input
 WHEN I am prompted for information about my application repository
 THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
@@ -68,3 +67,12 @@ Here are some guidelines to help you get started:
 * Include a video of the typical user flow through your application. This includes views of the prompts and the responses after their selection.
 
 * Include any other screenshots you deem necessary to help someone who has never been introduced to your application understand the purpose and function of it. This is how you will communicate to potential employers or other developers in the future what you built and why, and to show how it works.
+
+## Sample README
+
+Here is a sample README.md file as a result of this application.
+Also, a walkthrough video demonstrating the functionality of the application.
+
+## Questions
+
+If you have any questions about the repo, open an issue or contact me directly at naraamtm@gmail.com. You can find more of my work at [GitHub](https://github.com/nara1469/).

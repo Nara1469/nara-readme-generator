@@ -16,9 +16,10 @@ const questions = [
         message: 'Please write a short description of your project:',
       },
       {
-        type: 'input',
+        type: 'checkbox',
         name: 'license',
         message: 'What kind of license should your project have?',
+        choices: ['None', 'MIT', 'ICS', 'Apache', 'Unlicense', 'Boost', 'GPLv2', 'GPLv3'],
       },
       {
         type: 'input',
@@ -31,19 +32,19 @@ const questions = [
         message: 'What is your email address?',
       },
       {
-        type: 'input',
+        type: 'confirm',
         name: 'installation',
-        message: 'What are the steps required to install your project?',
+        message: 'Do you have a specific installation guide?',
       },
       {
         type: 'input',
-        name: 'usage',
-        message: 'What does the user need to know about using the repo?',
+        name: 'user',
+        message: 'What is your "User Story"?',
       },
       {
-        type: 'input',
+        type: 'confirm',
         name: 'contribute',
-        message: 'What does the user need to know about contributing to the repo?',
+        message: 'Do you accept a contribution to your project?',
       },
 ];
 
@@ -63,6 +64,7 @@ function init() {
     .then((answers) => fs.writeFileSync('./utils/README.md', generateMarkdown(answers)))
     .then(() => console.log('Generating README.md...'))
     .catch((err) => console.error(err));
+    
 }
 
 // Function call to initialize app
