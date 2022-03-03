@@ -1,32 +1,20 @@
 # 09 Node.js Homework: Professional README Generator
 
-## About the Task
-
-When creating an open source project on GitHub, it’s important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions&mdash;this last part increases the likelihood that other developers will contribute to the success of the project. 
-
-You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.
-
-Your task is to create a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer). Review the [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide) as a reminder of everything that a high-quality, professional README should contain. 
-
 ## Table of Contents 
 
-- [Installation Guide](#installation)
+- [Description](#description)
 - [User Story](#story)
+- [Installation Guide](#installation)
 - [My Solution](#my-solution)
-- [Getting Started](#start)
 - [How to Contribute](#how-to-contribute)
 - [Sample README](#sample)
 - [Questions](#questions)
 
-## Installation Guide
+## Description
 
-The application will be invoked by using the following command:
+When creating an open source project on GitHub, it’s important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions&mdash;this last part increases the likelihood that other developers will contribute to the success of the project. 
 
-```bash
-node index.js
-```
-
-Because this application won’t be deployed, you’ll also need to provide a link to a walkthrough video that demonstrates its functionality. 
+This is a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer) This allows the project creator to devote more time to working on the project.
 
 ## User Story
 
@@ -36,42 +24,67 @@ I WANT a README generator
 SO THAT I can quickly create a professional README for a new project
 ```
 
+## Installation Guide
+
+Clone the repository then run the following command at the root directory as by default to install all necessary dependencies.
+
+```
+npm i
+```
+    
+Once you have the modules installed in the root directory run the following command to run the application.
+    
+```
+node index
+```
+
+Because this application won’t be deployed, here is a link to a walkthrough video that demonstrates its functionality. [Walkthrough Video - GIF format](./utils/readme-video.gif)
+
 ## My Solution
 
-```
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for information about my application repository
-THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-WHEN I enter my project title
-THEN this is displayed as the title of the README
-WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-WHEN I choose a license for my application from a list of options
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-WHEN I enter my GitHub username
-THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-WHEN I enter my email address
-THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-WHEN I click on the links in the Table of Contents
-THEN I am taken to the corresponding section of the README
-```
+This command-line application can quickly and easily create a README file  from a user's input using the `Inquirer package`. This task comes with the starter code. The repo includes a `package.json` with the required dependencies. Be sure to create your `.gitignore` file before installing any npm dependencies.
 
-## Getting Started
+A high-quality, professional README.md is generated with the title of a project and sections entitled Description, Table of Contents, License,  Installation Guideline, User Story, Contributing, and Open to Feedback Information.
 
-Here are some guidelines to help you get started:
+When a user inputs the following questions /inquirer.promt(questions)/, the answers are passed to generateMarkdown. To pass this data object between index.js and generateMarkdown.js I used the `object destructuring` and `modularization` methods. The `questions` array:
 
-* Create a `.gitignore` file and include `node_modules/` and `.DS_Store/` so that your `node_modules` directory isn't tracked or uploaded to GitHub. Be sure to create your `.gitignore` file before installing any npm dependencies.
+- What is your project's name? 
+- Description of your project?
+- What kind of license should your project have? 
+- What is your GitHub username?
+- What is your email address? 
+- What is your "User Story"? 
+- Do you have an Installation Guideline?
+- Do you have a Contribution Guideline?
 
-* Make sure that your repo includes a `package.json` with the required dependencies. You can create one by running `npm init` when you first set up the project, before installing any dependencies.
+For a license entry, you are able to choose a license from a list of options. /inquirer input type: `checkbox`/
+Then a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under. /function renderLicenseBadge() default value: empty string/
 
-* Include a video of the typical user flow through your application. This includes views of the prompts and the responses after their selection.
+Your GitHub username and email information are used in Questions section to get feedback with a link. 
 
-* Include any other screenshots you deem necessary to help someone who has never been introduced to your application understand the purpose and function of it. This is how you will communicate to potential employers or other developers in the future what you built and why, and to show how it works.
+When you click on the links in the Table of Contents, then you are taken to the corresponding section of the README. This is able to help with using the right markdown syntax.
+
+## How to Contribute
+
+If you want to contribute the repo, follow the next steps:
+
+- Create your own git branch
+- Push it to the repository
+- Create a Pull Request
+    
+If the PR is approved by the administrator, the code will be merged into the main branch!
 
 ## Sample README
 
-Here is a sample README.md file as a result of this application.
-Also, a walkthrough video demonstrating the functionality of the application.
+Here is a sample README.md file as a result of this application. [README.md](./utils/README.md).
+Also, a walkthrough video demonstrating the functionality of the application. 
+
+- [Walkthrough Video - Screen Castify Format](./utils/README-generator-video.webm) 
+- [Walkthrough Video - Mp4 Format](./utils/readme-video.mp4)
+- [Walkthrough Video - GIF format](./utils/readme-video.gif)
+
+Screenshots: For User inputs from the command line in Terminal
+![User Input](./utils/user-input-in-terminal.png)
 
 ## Questions
 

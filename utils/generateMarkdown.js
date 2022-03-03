@@ -50,21 +50,21 @@ function generateMarkdown({ title, license, description, github, email, installa
   if (installation) {
 installationText = `Clone the repository then run the following command at the root directory as by default to install all necessary dependencies.
 
-    \`\`\`
-    npm i
-    \`\`\`
+\`\`\`
+npm i
+\`\`\`
     
-Once you have the modules installed in the root directory run following command to run the application.
+Once you have the modules installed in the root directory run the following command to run the application.
     
-    \`\`\`
-    node index
-    \`\`\``;
+\`\`\`
+node index
+\`\`\``;
   }
 
   let contributeText = `This repo is under construction. Please wait for the contribution!`;
 
   if (contribute) {
-contributeText = `Once you accepted to contribute the repo, follow next steps:
+contributeText = `If you want to contribute the repo, follow the next steps:
 
 - Create your own git branch
 - Push it to the repository
@@ -78,6 +78,7 @@ If the PR is approved by the administrator, the code will be merged into the mai
 ${licenseBadge}
   
 ## Description
+
 ${description}
 
 ## Table of Contents 
@@ -101,11 +102,13 @@ ${user}
 ---
 
 ## Installation Guide
+
 ${installationText}
 
 ## How to Contribute
-${contributeText}
 
+${contributeText}
+ 
 ## Questions
 
 If you have any questions about the repo, open an issue or contact me directly at ${email}. You can find more of my work at [GitHub](https://github.com/${github}/).`
