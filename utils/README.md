@@ -10,7 +10,7 @@ Generate a README.md from command line
 
 * [User Story](#user-story)
 * [License](#license)
-* [Installation Guide](#installation)
+* [Installation Guide](#installation-guide)
 * [How to Contribute](#how-to-contribute)
 * [Questions](#questions)
 

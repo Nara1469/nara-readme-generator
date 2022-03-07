@@ -7,7 +7,7 @@
 - [Installation Guide](#installation)
 - [My Solution](#my-solution)
 - [How to Contribute](#how-to-contribute)
-- [Sample README](#sample)
+- [Sample README](#sample-readme)
 - [Questions](#questions)
 
 ## Description
@@ -76,7 +76,8 @@ If the PR is approved by the administrator, the code will be merged into the mai
 
 ## Sample README
 
-Here is a sample README.md file as a result of this application. [README.md](./utils/README.md).
+Here is a sample README.md file as a result of this application. The sample README.md is created in ./utils directory (prevents it override this application repo README.md) [README.md](./utils/README.md).
+
 Also, a walkthrough video demonstrating the functionality of the application. 
 
 - [Walkthrough Video - Screen Castify Format](./utils/README-generator-video.webm) 
